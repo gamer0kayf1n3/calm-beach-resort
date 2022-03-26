@@ -1,188 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calm Beach Resort</title>
-    <style>
-        body {
-            margin:0;
-            border:0;
-            padding:0;
-        }
-        @font-face {
-            font-family: hplight;
-            src: url("HP Simplified Light.ttf");
-        }
-        @font-face {
-            font-family: hp;
-            src: url("HP Simplified.ttf");
-        }
-        @font-face {
-            font-family: hpbold;
-            src: url("HP Simplified Bold.ttf");
-        }
-        @font-face {
-            font-family: hpitalic;
-            src: url("HP Simplified Italic.ttf");
-        }
-        @font-face {
-            font-family: hpregular;
-            src: url("HP Simplified Regular.ttf");
-        }
-        #header {
-            background-color:#f6d7b0;
-            font-family: hplight, Arial, Helvetica, sans-serif;
-            padding: 10px;
-        }
-        #body {background-color:rgb(173, 234, 255);width:900px;margin-left:auto;margin-right:auto;width:600px;padding-left:100px;padding-right:100px;padding-top: 20px;padding-bottom: 20px;}
-        #sec1 {
-            display: flex;
-            padding-left:10px;
-            padding-right:10px;
-            padding-top: 10px;
-        }
-        #body #sec1 #divider1 {
-            width:50%;
-            float: left;
-        }
-        #body #sec1 #divider1 #sun {
-            width:50%;
-        }
-        #body #sec1 #divider2 {
-            width:50%;
-            float: left;
-            text-align:center;  
-        }
-        #body #sec1 #divider2{
-            font-family: hplight;
-            font-size:18pt;
-            transform:translateY(25%);
-        }
-        #body #sec1 #divider2 #bold {
-            font-family: hpbold;
-        }
-        #body #sec1 #clear {
-            clear:both;
-        }
-        #body #sec2 {
-            padding-left:10px;
-            padding-right:10px;
-            padding-top: 10px;
-            display:flex;justify-content:center;align-items:center;
-        }
-        #body td {
-            padding:20px 5px 20px 5px;
-            font-size:14pt;
-            font-family: hpregular;
-            text-align: center;
-            transition:font-size 0.2s;
-            min-width: 600px;
-        }
-        #body td:hover {
-            padding:20px 5px 20px 5px;
-            font-size:18pt;
-            font-family: hpregular;
-            text-align: center;
-        }
-        #body tr:nth-child(even) {
-    background-color: #3eb8eb;
-  }
-  #body tr:nth-child(odd) {
-    background-color: #009fe3;
-  }
-  #end {
-      background-color:#009fe3;
-      padding:30px;
-      font-family: hp, Arial, Helvetica, sans-serif;
-  }
-  .modal-newsletter {	
-		color: #999;
-		width: 625px;
-		font-size: 15px;
-		margin: 30px auto;
-	}
-    body {
-        font-family: hp, Arial, Helvetica, sans-serif;
-    }
-	.modal-newsletter .modal-content {
-		padding: 30px;
-		border-radius: 0;		
-		border: none;
-	}
-	.modal-newsletter .modal-header {
-		border-bottom: none;   
-        position: relative;
-		border-radius: 0;
-	}
-	.modal-newsletter h4 {
-		color: #000;
-		font-size: 30px;
-		margin: 0;
-		font-weight: bold;
-	}
-	.modal-newsletter .close {
-		position: absolute;
-		top: -15px;
-		right: -15px;
-		text-shadow: none;
-		opacity: 0.3;
-		font-size: 24px;
-	}
-	.modal-newsletter .close:hover {
-		opacity: 0.8;
-	}
-	.modal-newsletter .icon-box {
-		color: #7265ea;		
-		display: inline-block;
-		z-index: 9;
-		text-align: center;
-		position: relative;
-		margin-bottom: 10px;
-	}
-	.modal-newsletter .icon-box i {
-		font-size: 110px;
-	}
-	.modal-newsletter .form-control, .modal-newsletter .btn {
-		min-height: 46px;
-		border-radius: 0;
-	}
-	.modal-newsletter .form-control {
-		box-shadow: none;
-		border-color: #dbdbdb;
-	}
-	.modal-newsletter .form-control:focus {
-		border-color: #f95858;
-		box-shadow: 0 0 8px rgba(249, 88, 88, 0.4);
-	}
-    .modal-newsletter .btn {
-        color: #fff;
-		background: #f95858;
-		text-decoration: none;
-		transition: all 0.4s;
-        line-height: normal;
-		padding: 6px 20px;
-		min-width: 150px;
-		margin-left: 6px !important;
-        border: none;
-    }
-	.modal-newsletter .btn:hover, .modal-newsletter .btn:focus {
-		box-shadow: 0 0 8px rgba(249, 88, 88, 0.4);
-		background: #f72222;
-		outline: none;
-	}
-	.modal-newsletter .input-group {
-		margin-top: 30px;
-	}
-	.hint-text {
-		margin: 100px auto;
-		text-align: center;
-	}
-    #myModal {background-color:rgb(173, 234, 255);}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
+
+<body>
     <div id="header">
         <h1>CALM BEACH RESORT</h1>
     </div>
@@ -195,23 +23,74 @@
         </div>
         <div id="sec2">
             <table>
-                <tr><td>We keep the sea animals safe.</td></tr>
-                <tr><td>Our beach is always clean.</td></tr>
-                <tr><td>There are nearby hotels that has low costs.</td></tr>
-                <tr><td>Enjoy your stay!</td></tr>
+                <tr>
+                    <td>We keep the sea animals safe.</td>
+                </tr>
+                <tr>
+                    <td>Our beach is always clean.</td>
+                </tr>
+                <tr>
+                    <td>There are nearby hotels that has low costs.</td>
+                </tr>
+                <tr>
+                    <td>Enjoy your stay!</td>
+                </tr>
             </table>
         </div>
-
+        <h2 class="large">We are Calm Beach Resort.</h2>
+        <p>Calm Beach Resort is the newest resort, most exciting beach and resort destination in Taguig City. Our resort offers multiple and amazing amenities that is sure to make you enjoy your stay, and make it a memorable one. Welcome aboard to Calm Beach
+            Resort, and we hope to see you soon. Have a good one!</p>
+        <h2 class="large">Amenities</h2>
+        <div id="sec1">
+            <div id="divider1"><img id="coffee" src="coffee.webp"></div>
+            <div id="divider2a"><span class="thick">Cafe</span><br>Our resort offers a cafe, with the finest coffee.</div>
+            <div id="clear"></div>
+        </div>
+        <div id="sec1">
+            <div id="divider2a"><span class="thick">Wifi</span><br>Calm Beach Resort offers a fast hassle-free 5Ghz wifi.</div>
+            <div id="divider1a"><img id="wifi" src="wifi.webp"></div>
+            <div id="clear"></div>
+        </div>
+        <div id="sec1">
+            <div id="divider1"><img id="room" src="room.jpg"></div>
+            <div id="divider2a"><span class="thick">Air-conditioned Guest Rooms</span><br>Our resort offers a fresh, regularly cleaned room, to make you enjoy your stay.</div>
+            <div id="clear"></div>
+        </div>
+        <div id="sec1">
+            <div id="divider2a"><span class="thick">24-hour Front Desk Service</span><br>We have multiple receptionists to assist you in your stay.<br></div>
+            <div id="divider1a"><img id="front" src="front.jpg"></div>
+            <div id="clear"></div>
+        </div>
+        <div id="sec1">
+            <div id="divider1"><img id="park" src="park.jpg"></div>
+            <div id="divider2a"><span class="thick">Free Parking</span><br>To accommodate multiple people visiting our resort, we provide free parking.</div>
+            <div id="clear"></div>
+        </div>
+        <div id="sec1">
+            <div id="divider2a"><span class="thick">Room Service</span><br>Our resort provides food to be delivered to your room by our staff.<br></div>
+            <div id="divider1a"><img id="roomservice" src="room service.jpeg"></div>
+            <div id="clear"></div>
+        </div>
+        <div id="sec1">
+            <div id="divider1"><img id="park" src="restaurant.jpg"></div>
+            <div id="divider2a"><span class="thick">Restaurant</span><br>Our resort has a restaurant to satisfy your hunger needs.</div>
+            <div id="clear"></div>
+        </div>
+        <div id="sec1">
+            <div id="divider2a"><span class="thick">Scuba Diving</span><br>Our resort has scuba diving to discover the wonders of underwater.<br></div>
+            <div id="divider1a"><img id="roomservice" src="scuba.jpg"></div>
+            <div id="clear"></div>
+        </div>
     </div>
     <div id="myModal" class="modal fade">
         <div class="modal-dialog modal-newsletter">
             <div class="modal-content">
                 <form action="/calm-beach-resort/mailconf" method="get">
                     <div class="modal-header">
-                        <h4>Subscribe to our newsletter</h4>	
+                        <h4>Subscribe to our newsletter</h4>
 
                     </div>
-                    <div class="modal-body">					
+                    <div class="modal-body">
                         <p>Signup for our weekly newsletter to be notified of our new events, and amazing PROMOS!</p>
                         <div class="input-group">
                             <input type="email" class="form-control" placeholder="Enter your email" required>
@@ -220,16 +99,14 @@
                             </span>
                         </div>
                     </div>
-                </form>			
+                </form>
             </div>
         </div>
     </div>
     <div id="end">
-        Contact Us at:<br>
-        Mobile Number: (+63) 910 000 0000<br>
-        Website: <a href="https://gamer0kayf1n3.github.io/calm-beach-resort">https://gamer0kayf1n3.github.io/calm-beach-resort</a>
+        Contact Us at:<br> Mobile Number: (+63) 910 000 0000<br> Website: <a href="https://gamer0kayf1n3.github.io/calm-beach-resort">https://gamer0kayf1n3.github.io/calm-beach-resort</a>
 
     </div>
-
 </body>
+
 </html>
